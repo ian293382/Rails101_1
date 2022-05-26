@@ -18,3 +18,26 @@ ActiveStorage.start()
 
 // Add this line
 import '../js/bootstrap_js_files.js'
+
+//toastr javascript
+global.toastr = require("toastr")
+import "../packs/application"
+//javascript
+setTimeout(function() {
+           toastr.options = {
+              "closeButton": true,
+              "debug": false,
+              "progressBar": true,
+              "positionClass": "toast-top-right",
+              "onclick": null,
+              "showDuration": "500",
+              "hideDuration": "1000",
+              "timeOut": "5000",
+              "extendedTimeOut": "1000",
+              "showEasing": "linear",
+              "hideEasing": "linear",
+              "showMethod": "fadeIn",
+              "hideMethod": "fadeOut"
+            };
+            toastr.success("Welcome Admin", "Smartcomp Solutions Inc.");
+        },1000);
