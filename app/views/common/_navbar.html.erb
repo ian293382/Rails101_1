@@ -4,11 +4,13 @@
       <a class="navbar-brand" href="/"> Rails 101</a>
     </div>
 
-    <div class="collapse navbsar-collapse">
+
       <ul class="nav navbar-nav navbar-right">
-        <li>
-          <%= link_to("log in", '#') %>
+        <li class="<%= active_class('/') %>">
+           <%= link_to 'log in', root_path %>
         </li>
+
       </ul>
    </div>
+
 </nav>
