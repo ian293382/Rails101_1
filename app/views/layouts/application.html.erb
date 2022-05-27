@@ -13,6 +13,8 @@
 
   <body>
     <div class="container-fluid">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <%= render "common/navbar" %>
       <% if flash.any? %>
           <script type="text/javascript"><% flash.each do |key, value| %>
