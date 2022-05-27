@@ -4,7 +4,7 @@ module Authors
 
       # GET /posts or /posts.json
       def index
-        @posts = Post.all
+        @posts = current_author.posts
       end
 
       # GET /posts/1 or /posts/1.json
@@ -13,7 +13,7 @@ module Authors
 
       # GET /posts/new
       def new
-        @post = Post.new
+        @post = current_author.posts.build
       end
 
       # GET /posts/1/edit
@@ -22,7 +22,7 @@ module Authors
 
       # POST /posts or /posts.json
       def create
-        @post = Post.new(post_params)
+        @post = current_author.posts.build(post_params)
 
         respond_to do |format|
           if @post.save
@@ -66,7 +66,7 @@ module Authors
 
         # Only allow a list of trusted parameters through.
         def post_params
-          params.require(:post).permit(:title, :description, :published, :published_at, :author_id)
+          params.require(:post).permit(:title, :description)
         end
     end
 end
