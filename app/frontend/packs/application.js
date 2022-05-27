@@ -39,5 +39,5 @@ setTimeout(function() {
               "showMethod": "fadeIn",
               "hideMethod": "fadeOut"
             };
-            toastr.success("Welcome Admin", "Smartcomp Solutions Inc.");
+    
         },1000);
