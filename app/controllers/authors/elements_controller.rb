@@ -21,7 +21,7 @@ module Authors
     # PATCH/PUT /elements/1 or /elements/1.json
     def update
       if @element.update(element_params)
-        redirect_to edit_post_path(@post), notice: 'Element was successfully updated.'
+          redirect_to edit_post_path(@post), notice: 'Element was successfully updated.'
       else
         render :edit
       end
