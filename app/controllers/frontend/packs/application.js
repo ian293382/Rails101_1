@@ -12,7 +12,9 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-
+<style>
+@import url(resrt.css);
+</style>
 
 // inside app/frontend/packs/application.js
 
@@ -39,5 +41,5 @@ setTimeout(function() {
               "showMethod": "fadeIn",
               "hideMethod": "fadeOut"
             };
-    
+
         },1000);

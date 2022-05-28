@@ -6,7 +6,7 @@
 
 
 <% @posts.each do |post| %>
-  <%= link_to post, class: 'text-decoration-none' do %>
+  <%= link_to edit_post_path(post), class: 'text-decoration-none' do %>
   <div class="card text-black md-3" >
       <div class="card-body">
         <h5 class='card-title md-1 text-dark'><%= post.title %></h5>
