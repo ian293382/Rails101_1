@@ -1,6 +1,7 @@
 module Authors
     class PostsController < AuthorsController
-      before_action :set_post, only: %i[ show edit update destroy ]
+      #withdraw show page
+      before_action :set_post, only: %i[  edit update destroy ]
 
       # GET /posts or /posts.json
       def index
@@ -8,8 +9,8 @@ module Authors
       end
 
       # GET /posts/1 or /posts/1.json
-      def show
-      end
+      # def show
+      # end
 
       # GET /posts/new
       def new
