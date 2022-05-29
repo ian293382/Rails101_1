@@ -2,14 +2,15 @@
 
 // Just a quick ugly style to see if our CSS works
 
-
+*= require trix
 // Import Bootstrap v5
 @import "~bootstrap/scss/bootstrap";
 
 @import 'toastr';
 
+@import "trix/dist/trix";
 
-
+@import "./pack/actiontext.scss";
 
 a:visited {
     color: #fff;
